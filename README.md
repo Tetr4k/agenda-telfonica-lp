@@ -2,9 +2,10 @@
 
 Esta é uma implementação de uma agenda telefonica usando uma lista de objetos para o 3º trabalho de Linguagens de Programação do curso de Ciência da Computação na UFF-PURO no periodo remoto de 2021-1.
 
-## Lingugagem
+## Linguagem
 
-Para a implementação desse trabalho foi escolhida a linguagem Java, por se tratar de um programa seguindo o paradigma Orientação a Objetos
+Para a implementação desse trabalho foi escolhida a linguagem Java, por se tratar de um programa seguindo o paradigma Orientação a Objetos.
+Será usado a plataforma [Replit](https://replit.com/) para desenvolvimento.
 
 ## Implementação
 
