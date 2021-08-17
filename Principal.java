@@ -2,6 +2,10 @@
 
 public class Principal
 {
+	static void limpaTela(){
+		for(int x=0; x<25; x++) System.out.println();
+	}
+
 	public static void main(String[] args)
 	{
 		Agenda agenda1 = new Agenda();
@@ -10,6 +14,7 @@ public class Principal
 		agenda1.inserir("Beltrano", 88889999, "Rua C", "Infância");
 		agenda1.inserir("Fulano", 77777777, "Rua D");
 		agenda1.remover("Ciclano");
+		limpaTela();
 		System.out.println(agenda1.toString());
 	}
 }
