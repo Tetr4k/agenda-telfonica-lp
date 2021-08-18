@@ -44,9 +44,22 @@ public class Agenda
         return true;
     }
 
+    public boolean remover(String nome)
+    {
+        for (Contato contato : this.contatos)
+            if(contato.getNome().equals(nome))
+            {
+                this.contatos.remove(contato);
+                return true;
+            }
+        return false;
+    }
+
     public String toString()
     {
-        String texto = "AGENDA\n\n";
+        if(this.contatos.isEmpty()) 
+            return "Agenda vazia";
+        String texto = "Agenda\n";
         for(Contato contato : this.contatos)
         {
             texto = texto.concat(contato.toString());
