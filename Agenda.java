@@ -1,4 +1,10 @@
 import java.util.ArrayList;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.BufferedReader;
 
 public class Agenda
 {
@@ -55,6 +61,53 @@ public class Agenda
         return false;
     }
 
+    public boolean salvar()
+    {
+        try
+        {
+            File arquivoContatos = new File( "./Contatos.txt" );
+            FileWriter fileWriter = new FileWriter(arquivoContatos);
+            BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
+            for(Contato contato : this.contatos)
+            {
+                bufferedWriter.write(contato.getNome());
+                bufferedWriter.newLine();
+                bufferedWriter.write(Integer.toString(contato.getNumero()));
+                bufferedWriter.newLine();
+                bufferedWriter.write(contato.getEndereco());
+                bufferedWriter.newLine();
+                bufferedWriter.write(contato.getRelacao());
+                bufferedWriter.newLine();
+            }
+            bufferedWriter.close();
+            fileWriter.close();
+            return true;
+        }
+        catch(IOException er)
+        {
+            return false;
+        }
+    }
+
+    public boolean recuperar()
+    {
+        try
+        {
+            File arquivoContatos = new File( "./Contatos.txt" );
+            FileReader fileReader = new FileReader(arquivoContatos);
+            BufferedReader bufferedReader = new BufferedReader(fileReader);
+            while(bufferedReader.ready())
+                this.contatos.add(new Contato(bufferedReader.readLine(), Integer.parseInt(bufferedReader.readLine()), bufferedReader.readLine(), bufferedReader.readLine()));
+            bufferedReader.close();
+            fileReader.close();
+            return true;
+        }
+        catch(IOException er)
+        {
+            return false;
+        }
+    }
+    
     public String toString()
     {
         if(this.contatos.isEmpty()) 
@@ -64,4 +117,5 @@ public class Agenda
             retorno += contato;
         return retorno;
     }
+    //salvar, recuperar
 }
