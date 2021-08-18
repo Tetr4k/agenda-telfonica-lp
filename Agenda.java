@@ -17,17 +17,18 @@ public class Agenda
         return null;
     }
 
-    public void inserir(String nome, int numero, String endereco, String relacao)
+    public boolean inserir(String nome, int numero, String endereco, String relacao)
     {
-        if(this.busca(nome) != null)
-        {
-            //this.altera(nome, numero, endereco, relacao);
-        }
-        else
-        {
-            Contato novoContato = new Contato(nome, numero, endereco, relacao);
-            this.contatos.add(novoContato);
-        }
+        for (Contato contato : this.contatos)
+            if(contato.getNome().equals(nome))
+            {
+                contato.setNumero(numero);
+                contato.setEndereco(endereco);
+                contato.setRelacao(relacao);
+                return false;
+            }
+        this.contatos.add(new Contato(nome, numero, endereco, relacao));
+        return true;
     }
 
     public String toString()
