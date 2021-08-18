@@ -59,11 +59,9 @@ public class Agenda
     {
         if(this.contatos.isEmpty()) 
             return "Agenda vazia";
-        String texto = "Agenda\n";
+        String retorno = "Contatos na sua agenda:\n";
         for(Contato contato : this.contatos)
-        {
-            texto = texto.concat(contato.toString());
-        }
-        return texto;
+            retorno += contato;
+        return retorno;
     }
 }
