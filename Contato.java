@@ -11,6 +11,11 @@ public class Contato
         this.relacao    = relacao;
     }
 
+    public String getNome()
+    {
+        return this.nome;
+    }
+
     public String toString()
     {
         return "Nome: "+this.nome+
