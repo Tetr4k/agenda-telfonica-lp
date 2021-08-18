@@ -9,6 +9,14 @@ public class Agenda
         this.contatos = new ArrayList<Contato>();
     }
 
+    public Contato busca(String nome)
+    {
+        for (Contato contato : this.contatos)
+            if(contato.getNome().equals(nome))
+                return contato;
+        return null;
+    }
+
     public String toString()
     {
         String texto = "AGENDA\n\n";
