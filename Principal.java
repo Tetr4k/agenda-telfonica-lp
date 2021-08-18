@@ -40,14 +40,22 @@ public class Principal
 			{
 				case 1:
 					System.out.print("Digite o nome do contato:\n>");
-					String nome = leitor2.nextLine();
-					Contato contato = agenda.busca(nome);
+					Contato contato = agenda.busca(leitor2.nextLine());
 					limpaTela();
 					if(contato == null)
-						System.out.println("Não foi possivel encontrar o contato "+nome+" na agenda.");
+						System.out.println("Não foi possivel encontrar o contato na agenda.");
 					else
 						System.out.println(contato);
-					nome = leitor2.nextLine();
+					//arrumar uma forma de system pause
+					break;
+				case 2:
+					System.out.print("Digite o nome, telefone, endereco e relacao do contato:\n");
+					if(agenda.inserir(leitor2.nextLine(), leitor.nextInt(), leitor2.nextLine(), leitor2.nextLine()))
+						System.out.print("Contato inserido com sucesso!");
+					else
+						System.out.print("Contato alterado com sucesso!");
+					//arrumar uma forma de system pause
+					break;
 			}
 		}while(opcao != 7);
 		leitor.close();
