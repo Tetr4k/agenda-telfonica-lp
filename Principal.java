@@ -27,7 +27,7 @@ public class Principal
 		agenda.inserir("Fulano", 99999999, "Rua A", "UFF");
 		agenda.inserir("Ciclano", 88888888, "Rua B", "Cederj");
 		agenda.inserir("Beltrano", 88889999, "Rua C", "Infância");
-		//agenda.inserir("Fulano", 77777777, "Rua D");
+		agenda.inserir("Fulano", 77777777, "Rua D", "UFF");
 		//agenda.remover("Ciclano");
 		int opcao;
 		do{
