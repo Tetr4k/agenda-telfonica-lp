@@ -16,8 +16,7 @@ public class Principal
 						 "5. Salvar;\n"+
 						 "6. Recuperar;\n"+
 						 "7. Sair\n"+
-						 "=============\n"+
-						 ">");
+						 "=============\n");
 	}
 
 	public static void main(String[] args)
