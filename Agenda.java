@@ -12,7 +12,7 @@ public class Agenda
     public Contato busca(String nome)
     {
         for (Contato contato : this.contatos)
-            if(contato.getNome().equals(nome))
+            if(contato.getNome().contains(nome))
                 return contato;
         return null;
     }
