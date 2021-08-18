@@ -15,6 +15,21 @@ public class Contato
     {
         return this.nome;
     }
+    
+    public int getNumero()
+    {
+        return this.numero;
+    }
+
+    public String getEndereco()
+    {
+        return this.endereco;
+    }
+    
+    public String getRelacao()
+    {
+        return this.relacao;
+    }
 
     public void setNumero(int numero)
     {
