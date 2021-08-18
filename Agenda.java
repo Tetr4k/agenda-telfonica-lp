@@ -17,6 +17,19 @@ public class Agenda
         return null;
     }
 
+    public boolean alterar(String nome, int numero, String endereco, String relacao)
+    {
+        for (Contato contato : this.contatos)
+            if(contato.getNome().equals(nome))
+            {
+                contato.setNumero(numero);
+                contato.setEndereco(endereco);
+                contato.setRelacao(relacao);
+                return true;
+            }
+        return false;
+    }
+
     public boolean inserir(String nome, int numero, String endereco, String relacao)
     {
         for (Contato contato : this.contatos)
