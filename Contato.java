@@ -13,9 +13,9 @@ public class Contato
 
     public String toString()
     {
-        return "Nome: "+this.nome+"\n"+
-               "Telefone: "+this.numero+"\n"+
-               "Endereco: "+this.endereco+"\n"+
-               "Relacao: "+this.relacao;
+        return "Nome: "+this.nome+
+               ", Telefone: "+this.numero+
+               ", Endereco: "+this.endereco+
+               ", Relacao: "+this.relacao+"\n";
     }
 }
