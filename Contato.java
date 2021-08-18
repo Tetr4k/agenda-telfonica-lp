@@ -16,6 +16,21 @@ public class Contato
         return this.nome;
     }
 
+    public void setNumero(int numero)
+    {
+        this.numero = numero;
+    }
+
+    public void setEndereco(String endereco)
+    {
+        this.endereco = endereco;
+    }
+
+    public void setRelacao(String relacao)
+    {
+        this.relacao = relacao;
+    }
+
     public String toString()
     {
         return "Nome: "+this.nome+
