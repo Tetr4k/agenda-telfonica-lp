@@ -61,11 +61,11 @@ public class Agenda
         return false;
     }
 
-    public boolean salvar()
+    public boolean salvar(String nomeArquivo)
     {
         try
         {
-            File arquivoContatos = new File( "./Contatos.txt" );
+            File arquivoContatos = new File(nomeArquivo+".txt");
             FileWriter fileWriter = new FileWriter(arquivoContatos);
             BufferedWriter bufferedWriter = new BufferedWriter(fileWriter);
             for(Contato contato : this.contatos)
@@ -89,11 +89,11 @@ public class Agenda
         }
     }
 
-    public boolean recuperar()
+    public boolean recuperar(String nomeArquivo)
     {
         try
         {
-            File arquivoContatos = new File( "./Contatos.txt" );
+            File arquivoContatos = new File(nomeArquivo+".txt");
             FileReader fileReader = new FileReader(arquivoContatos);
             BufferedReader bufferedReader = new BufferedReader(fileReader);
             while(bufferedReader.ready())
