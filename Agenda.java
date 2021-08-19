@@ -15,10 +15,10 @@ public class Agenda
         this.contatos = new ArrayList<Contato>();
     }
 
-    public Contato busca(String nome)
+    public Contato buscar(String nome)
     {
         for (Contato contato : this.contatos)
-            if(contato.getNome().contains(nome))
+            if(contato.getNome().toUpperCase().contains(nome.toUpperCase()))
                 return contato;
         return null;
     }
@@ -26,7 +26,7 @@ public class Agenda
     public boolean alterar(String nome, int numero, String endereco, String relacao)
     {
         for (Contato contato : this.contatos)
-            if(contato.getNome().equals(nome))
+            if(contato.getNome().toUpperCase().equals(nome.toUpperCase()))
             {
                 contato.setNumero(numero);
                 contato.setEndereco(endereco);
@@ -39,7 +39,7 @@ public class Agenda
     public boolean inserir(String nome, int numero, String endereco, String relacao)
     {
         for (Contato contato : this.contatos)
-            if(contato.getNome().equals(nome))
+            if(contato.getNome().toUpperCase().equals(nome.toUpperCase()))
             {
                 contato.setNumero(numero);
                 contato.setEndereco(endereco);
@@ -53,7 +53,7 @@ public class Agenda
     public boolean remover(String nome)
     {
         for (Contato contato : this.contatos)
-            if(contato.getNome().equals(nome))
+            if(contato.getNome().toUpperCase().equals(nome.toUpperCase()))
             {
                 this.contatos.remove(contato);
                 return true;
