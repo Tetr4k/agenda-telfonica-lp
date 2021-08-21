@@ -1,8 +1,11 @@
 public class Contato
 {
-	private String nome, endereco, relacao;
+
+    /*Atributos da classe Contato*/
+    private String nome, endereco, relacao;
     private int numero;
 
+    /*Construtor da classe Contato(Caso base)*/
     public Contato(String nome, int numero, String endereco, String relacao)
     {
         this.nome       = nome;
@@ -11,6 +14,7 @@ public class Contato
         this.relacao    = relacao;
     }
 
+    /*Getters*/
     public String getNome()
     {
         return this.nome;
@@ -31,6 +35,7 @@ public class Contato
         return this.relacao;
     }
 
+    /*Setters*/
     public void setNumero(int numero)
     {
         this.numero = numero;
@@ -46,6 +51,7 @@ public class Contato
         this.relacao = relacao;
     }
 
+    /*Funções auxiliares*/
     public String toString()
     {
         return "Nome: "+this.nome+
