@@ -77,6 +77,12 @@ public class AgendaManager {
 					limpaTela();
 					break;
 				case 2:
+					/*
+						Insere um contato na agenda
+							Pergunta pelos dados do contato
+							Se for inserido informa que foi inserido
+							Se alterar um contato informa que foi alterado
+					*/
 					System.out.println("Qual o nome do contato?");
 					nome = leitorString.nextLine();
 					limpaTela();
