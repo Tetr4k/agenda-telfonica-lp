@@ -8,13 +8,16 @@ import java.io.BufferedReader;
 
 public class Agenda
 {
+    /*Atributos da classe Agenda*/
     private ArrayList<Contato> contatos;
 
+    /*Construtor da classe Agenda(Caso base)*/
     public Agenda()
     {
         this.contatos = new ArrayList<Contato>();
     }
 
+    /*Funções auxiliares*/
     public Contato buscar(String nome)
     {
         for (Contato contato : this.contatos)
