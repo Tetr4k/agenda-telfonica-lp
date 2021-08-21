@@ -163,6 +163,12 @@ public class AgendaManager {
 					limpaTela();
 					break;
 				case 6:
+					/*
+						Recupera a agenda
+							Pergunta o nome do arquivo
+							Se for recuperado informa que foi recuperado
+							Se gerar erro informa que gerou erro
+					*/
 					System.out.println("Qual o nome do arquivo?");
 					nomeArquivo = leitorString.nextLine();
 					limpaTela();
