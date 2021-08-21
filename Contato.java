@@ -1,6 +1,6 @@
 public class Contato
 {
-	private String nome, endereco, relacao;
+    private String nome, endereco, relacao;
     private int numero;
 
     public Contato(String nome, int numero, String endereco, String relacao)
