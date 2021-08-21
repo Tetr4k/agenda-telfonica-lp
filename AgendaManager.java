@@ -146,6 +146,12 @@ public class AgendaManager {
 					limpaTela();
 					break;
 				case 5:
+					/*
+						Salva a agenda
+							Pergunta o nome do arquivo
+							Se for salvo informa que foi salvo
+							Se gerar erro informa que gerou erro
+					*/
 					System.out.println("Qual o nome do arquivo?");
 					nomeArquivo = leitorString.nextLine();
 					limpaTela();
