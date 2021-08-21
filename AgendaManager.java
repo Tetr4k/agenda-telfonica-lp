@@ -175,7 +175,7 @@ public class AgendaManager {
 					if(agenda.recuperar(nomeArquivo))
 						System.out.println("Recuperado com sucesso");
 					else
-						System.out.println("Erro ao salvar");
+						System.out.println("Erro ao recuperar");
 					esperaEnter();
 					limpaTela();
 					break;
