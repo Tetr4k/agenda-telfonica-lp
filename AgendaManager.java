@@ -48,9 +48,10 @@ public class AgendaManager {
 
 		Agenda agenda = new Agenda();//Inicializa a agenda
 		do{
-			/*Ciclo do programa
-				Imprime conteudo da agenda seguido do menu
-				Usuario escolhe uma opção
+			/*
+				Ciclo do programa
+					Imprime conteudo da agenda seguido do menu
+					Usuario escolhe uma opção
 			*/
 			System.out.println(agenda);
 			imprimeMenu();
