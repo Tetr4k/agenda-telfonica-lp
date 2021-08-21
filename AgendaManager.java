@@ -181,7 +181,8 @@ public class AgendaManager {
 					break;
 			}
 		}while(opcao != 7);
-		leitorInt.close();
+		/*Encerra os leitores*/
+		leitorInt.close();		
 		leitorString.close();
     }
 }
