@@ -66,7 +66,7 @@ public class AgendaManager {
 							Se for encontrado imprime o contato
 							Se não for encontrado informa que não foi
 					*/
-					System.out.print("Qual o nome do contato?");
+					System.out.println("Qual o nome do contato?");
 					nome = leitorString.nextLine();
 					limpaTela();
 					contato = agenda.buscar(nome);
@@ -87,10 +87,10 @@ public class AgendaManager {
 					System.out.println("Qual o nome do contato?");
 					nome = leitorString.nextLine();
 					limpaTela();
-					System.out.println("Qual o número do contato?");
+					System.out.println("Qual o numero do contato?");
 					numero = leitorInt.nextInt();
 					limpaTela();
-					System.out.println("Qual o endereço do contato?");
+					System.out.println("Qual o endereco do contato?");
 					endereco = leitorString.nextLine();
 					limpaTela();
 					System.out.println("Qual a relação do contato?");
@@ -113,10 +113,10 @@ public class AgendaManager {
 					System.out.println("Qual o nome do contato?");
 					nome = leitorString.nextLine();
 					limpaTela();
-					System.out.println("Qual o número do contato?");
+					System.out.println("Qual o numero do contato?");
 					numero = leitorInt.nextInt();
 					limpaTela();
-					System.out.println("Qual o endereço do contato?");
+					System.out.println("Qual o endereco do contato?");
 					endereco = leitorString.nextLine();
 					limpaTela();
 					System.out.println("Qual a relação do contato?");
