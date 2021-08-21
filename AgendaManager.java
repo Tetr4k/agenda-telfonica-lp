@@ -103,6 +103,12 @@ public class AgendaManager {
 					limpaTela();
 					break;
 				case 3:
+					/*
+						Altera um contado da agenda
+							Pergunta pelos dados do contato
+							Se for alterado informa que foi alterado
+							Se não encontrar informa que não foi encontrado
+					*/
 					System.out.println("Qual o nome do contato?");
 					nome = leitorString.nextLine();
 					limpaTela();
