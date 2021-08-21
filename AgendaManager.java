@@ -38,13 +38,15 @@ public class AgendaManager {
 
     public static void main(String[] args)
     {
-		Scanner leitorInt = new Scanner(System.in);
-		Scanner leitorString = new Scanner(System.in);
+		Scanner leitorInt = new Scanner(System.in);		//Cria o leitor para numeros
+		Scanner leitorString = new Scanner(System.in);	//Cria o leitor para texto		(Usar o mesmo Scanner gera erro)
+		
+		/*Define algumas variaveis auxiliares*/
 		Contato contato;
 		String nome, endereco, relacao, nomeArquivo;
-		int numero;
-		Agenda agenda = new Agenda();
-		int opcao;
+		int numero, opcao;
+
+		Agenda agenda = new Agenda();//Inicializa a agenda
 		do{
 			System.out.println(agenda);
 			imprimeMenu();
