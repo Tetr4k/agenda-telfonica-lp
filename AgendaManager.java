@@ -59,6 +59,12 @@ public class AgendaManager {
 			switch(opcao)
 			{
 				case 1:
+					/*
+						Busca pelo contato na agenda
+							Pergunta o nome e procura por ele
+							Se for encontrado imprime o contato
+							Se não for encontrado informa que não foi
+					*/
 					System.out.print("Qual o nome do contato?");
 					nome = leitorString.nextLine();
 					limpaTela();
