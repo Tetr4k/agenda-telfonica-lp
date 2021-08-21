@@ -129,6 +129,12 @@ public class AgendaManager {
 					limpaTela();
 					break;
 				case 4:
+					/*
+						Remove um contado da agenda
+							Pergunta pelo nome do contato
+							Se for removido informa que foi removido
+							Se não encontrar informa que não foi encontrado
+					*/
 					System.out.println("Qual o nome do contato?");
 					nome = leitorString.nextLine();
 					limpaTela();
