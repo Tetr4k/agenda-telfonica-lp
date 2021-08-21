@@ -2,11 +2,13 @@ import java.io.IOException;
 import java.util.Scanner;
 
 public class AgendaManager {
+	//Função para simular limpeza de tela
 	static void limpaTela()
 	{
 		for(int x=0; x<25; x++) System.out.println();
 	}
 
+	//Função para simular um System("pause")
 	static void esperaEnter()
 	{
 		try
@@ -20,6 +22,7 @@ public class AgendaManager {
 		}
 	}
 
+	//Função para imprimir o menu
 	static void imprimeMenu()
 	{
 		System.out.print("=====MENU=====\n"+
